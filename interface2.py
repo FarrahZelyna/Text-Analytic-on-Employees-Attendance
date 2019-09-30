@@ -1,0 +1,101 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'interface.ui'
+#
+# Created: Thu Jun 27 10:38:07 2019
+#      by: pyside-uic 0.2.15 running on PySide 1.2.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PySide import QtCore, QtGui
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(421, 394)
+        self.centralwidget = QtGui.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.horizontalLayout = QtGui.QHBoxLayout(self.centralwidget)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.gridLayout = QtGui.QGridLayout()
+        self.gridLayout.setObjectName("gridLayout")
+        spacerItem = QtGui.QSpacerItem(40, 20, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem, 7, 0, 1, 1)
+        self.horizontalLayout_2 = QtGui.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.img1 = QtGui.QLabel(self.centralwidget)
+        self.img1.setAlignment(QtCore.Qt.AlignCenter)
+        self.img1.setObjectName("img1")
+        self.horizontalLayout_2.addWidget(self.img1)
+        self.gridLayout.addLayout(self.horizontalLayout_2, 0, 0, 1, 1)
+        self.submitBtn = QtGui.QPushButton(self.centralwidget)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.submitBtn.sizePolicy().hasHeightForWidth())
+        self.submitBtn.setSizePolicy(sizePolicy)
+        self.submitBtn.setObjectName("submitBtn")
+        self.gridLayout.addWidget(self.submitBtn, 6, 0, 1, 1)
+        self.statuslabel = QtGui.QLabel(self.centralwidget)
+        font = QtGui.QFont()
+        font.setPointSize(22)
+        font.setWeight(75)
+        font.setBold(True)
+        self.statuslabel.setFont(font)
+        self.statuslabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.statuslabel.setObjectName("statuslabel")
+        self.gridLayout.addWidget(self.statuslabel, 8, 0, 1, 1)
+        spacerItem1 = QtGui.QSpacerItem(20, 10, QtGui.QSizePolicy.Expanding, QtGui.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem1, 2, 0, 1, 1)
+        self.uploadBtn = QtGui.QPushButton(self.centralwidget)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.uploadBtn.sizePolicy().hasHeightForWidth())
+        self.uploadBtn.setSizePolicy(sizePolicy)
+        self.uploadBtn.setObjectName("uploadBtn")
+        self.gridLayout.addWidget(self.uploadBtn, 3, 0, 1, 1)
+        self.label = QtGui.QLabel(self.centralwidget)
+        font = QtGui.QFont()
+        font.setPointSize(19)
+        font.setWeight(75)
+        font.setBold(True)
+        self.label.setFont(font)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
+        self.formLayout = QtGui.QFormLayout()
+        self.formLayout.setLabelAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.formLayout.setObjectName("formLayout")
+        self.file2 = QtGui.QLabel(self.centralwidget)
+        self.file2.setObjectName("file2")
+        self.formLayout.setWidget(0, QtGui.QFormLayout.LabelRole, self.file2)
+        self.file = QtGui.QLabel(self.centralwidget)
+        self.file.setText("")
+        self.file.setObjectName("file")
+        self.formLayout.setWidget(0, QtGui.QFormLayout.FieldRole, self.file)
+        self.gridLayout.addLayout(self.formLayout, 4, 0, 1, 1)
+        self.horizontalLayout.addLayout(self.gridLayout)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtGui.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 421, 25))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtGui.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        MainWindow.setWindowTitle(QtGui.QApplication.translate("MainWindow", "Axiata IT Support", None, QtGui.QApplication.UnicodeUTF8))
+        self.img1.setText(QtGui.QApplication.translate("MainWindow", "<html><head/><body><p><img src=\":/newPrefix/mesinniaga.png\"/></p></body></html>", None, QtGui.QApplication.UnicodeUTF8))
+        self.submitBtn.setText(QtGui.QApplication.translate("MainWindow", "Submit", None, QtGui.QApplication.UnicodeUTF8))
+        self.statuslabel.setText(QtGui.QApplication.translate("MainWindow", "STATUS", None, QtGui.QApplication.UnicodeUTF8))
+        self.uploadBtn.setText(QtGui.QApplication.translate("MainWindow", "Upload File", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("MainWindow", "Employees Attendance", None, QtGui.QApplication.UnicodeUTF8))
+        self.file2.setText(QtGui.QApplication.translate("MainWindow", "File Name : ", None, QtGui.QApplication.UnicodeUTF8))
+
+import picture2
+

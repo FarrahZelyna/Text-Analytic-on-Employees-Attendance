@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>mesinniaga.png</file>
+    <file>kecikaxiata.png</file>
+  </qresource>
+</RCC>
